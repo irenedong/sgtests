@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script><script src="https://unpkg.com/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://unpkg.com/markmap-toolbar@0.18.12/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"&#x60c5;&#x5831;&#x30bb;&#x30ad;&#x30e5;&#x30ea;&#x30c6;&#x30a3;&#x30de;&#x30cd;&#x30b8;&#x30e1;&#x30f3;&#x30c8;&#x8a66;&#x9a13;","children":[{"content":"1. &#x60c5;&#x5831;&#x30bb;&#x30ad;&#x30e5;&#x30ea;&#x30c6;&#x30a3;&#x306e;&#x57fa;&#x672c;&#x6982;&#x5ff5;","children":[{"content":"&#x6a5f;&#x5bc6;&#x6027;&#xff08;Confidentiality&#xff09;&#xff1a;&#x8a31;&#x53ef;&#x3055;&#x308c;&#x305f;&#x8005;&#x3060;&#x3051;&#x304c;&#x60c5;&#x5831;&#x306b;&#x30a2;&#x30af;&#x30bb;&#x30b9;&#x3067;&#x304d;&#x308b;","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"&#x5b8c;&#x5168;&#x6027;&#xff08;Integrity&#xff09;&#xff1a;&#x60c5;&#x5831;&#x304c;&#x6b63;&#x78ba;&#x3067;&#x6539;&#x3056;&#x3093;&#x3055;&#x308c;&#x3066;&#x3044;&#x306a;&#x3044;&#x72b6;&#x614b;","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"&#x53ef;&#x7528;&#x6027;&#xff08;Availability&#xff09;&#xff1a;&#x5fc5;&#x8981;&#x306a;&#x3068;&#x304d;&#x306b;&#x60c5;&#x5831;&#x306b;&#x30a2;&#x30af;&#x30bb;&#x30b9;&#x3067;&#x304d;&#x308b;&#x72b6;&#x614b;","children":[],"payload":{"tag":"li","lines":"5,7"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"2. &#x60c5;&#x5831;&#x30bb;&#x30ad;&#x30e5;&#x30ea;&#x30c6;&#x30a3;&#x5bfe;&#x7b56;","children":[{"content":"&#x7269;&#x7406;&#x7684;&#x5bfe;&#x7b56;&#xff1a;&#x5165;&#x9000;&#x5ba4;&#x7ba1;&#x7406;&#x3001;&#x76e3;&#x8996;&#x30ab;&#x30e1;&#x30e9;","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"&#x6280;&#x8853;&#x7684;&#x5bfe;&#x7b56;&#xff1a;&#x30d5;&#x30a1;&#x30a4;&#x30a2;&#x30a6;&#x30a9;&#x30fc;&#x30eb;&#x3001;&#x6697;&#x53f7;&#x5316;&#x3001;&#x30a6;&#x30a4;&#x30eb;&#x30b9;&#x5bfe;&#x7b56;&#x30bd;&#x30d5;&#x30c8;","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"&#x7ba1;&#x7406;&#x7684;&#x5bfe;&#x7b56;&#xff1a;&#x5c31;&#x696d;&#x898f;&#x5247;&#x3001;&#x30bb;&#x30ad;&#x30e5;&#x30ea;&#x30c6;&#x30a3;&#x30dd;&#x30ea;&#x30b7;&#x30fc;","children":[],"payload":{"tag":"li","lines":"10,12"}}],"payload":{"tag":"h2","lines":"7,8"}},{"content":"3. &#x30bb;&#x30ad;&#x30e5;&#x30ea;&#x30c6;&#x30a3;&#x8105;&#x5a01;&#x3068;&#x653b;&#x6483;&#x624b;&#x6cd5;","children":[{"content":"&#x8105;&#x5a01;","children":[{"content":"&#x30d5;&#x30a3;&#x30c3;&#x30b7;&#x30f3;&#x30b0;&#xff1a;&#x507d;&#x30e1;&#x30fc;&#x30eb;&#x306a;&#x3069;&#x3067;&#x30d1;&#x30b9;&#x30ef;&#x30fc;&#x30c9;&#x7b49;&#x3092;&#x76d7;&#x3080;","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"&#x30de;&#x30eb;&#x30a6;&#x30a7;&#x30a2;&#xff1a;&#x30a6;&#x30a4;&#x30eb;&#x30b9;&#x3001;&#x30c8;&#x30ed;&#x30a4;&#x306e;&#x6728;&#x99ac;&#x306a;&#x3069;","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"DoS&#x653b;&#x6483;&#xff1a;&#x30b5;&#x30fc;&#x30d3;&#x30b9;&#x3092;&#x505c;&#x6b62;&#x3055;&#x305b;&#x308b;&#x5927;&#x91cf;&#x30ea;&#x30af;&#x30a8;&#x30b9;&#x30c8;&#x653b;&#x6483;","children":[],"payload":{"tag":"li","lines":"16,17"}}],"payload":{"tag":"h3","lines":"13,14"}},{"content":"&#x653b;&#x6483;&#x624b;&#x6cd5;","children":[],"payload":{"tag":"h3","lines":"17,18"}}],"payload":{"tag":"h2","lines":"12,13"}},{"content":"4. &#x8a8d;&#x8a3c;&#x3068;&#x30a2;&#x30af;&#x30bb;&#x30b9;&#x5236;&#x5fa1;","children":[{"content":"&#x591a;&#x8981;&#x7d20;&#x8a8d;&#x8a3c;&#xff08;MFA&#xff09;","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"&#x30a2;&#x30af;&#x30bb;&#x30b9;&#x6a29;&#x7ba1;&#x7406;&#xff08;&#x6700;&#x5c0f;&#x6a29;&#x9650;&#x306e;&#x539f;&#x5247;&#xff09;","children":[],"payload":{"tag":"li","lines":"21,23"}}],"payload":{"tag":"h2","lines":"19,20"}},{"content":"5. &#x60c5;&#x5831;&#x30bb;&#x30ad;&#x30e5;&#x30ea;&#x30c6;&#x30a3;&#x7ba1;&#x7406;&#x306e;&#x67a0;&#x7d44;&#x307f;","children":[{"content":"ISMS&#xff08;&#x60c5;&#x5831;&#x30bb;&#x30ad;&#x30e5;&#x30ea;&#x30c6;&#x30a3;&#x30de;&#x30cd;&#x30b8;&#x30e1;&#x30f3;&#x30c8;&#x30b7;&#x30b9;&#x30c6;&#x30e0;&#xff09;","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"PDCA&#x30b5;&#x30a4;&#x30af;&#x30eb;&#xff08;Plan-Do-Check-Act&#xff09;","children":[],"payload":{"tag":"li","lines":"25,27"}}],"payload":{"tag":"h2","lines":"23,24"}},{"content":"6. &#x95a2;&#x9023;&#x6cd5;&#x4ee4;&#x30fb;&#x30ac;&#x30a4;&#x30c9;&#x30e9;&#x30a4;&#x30f3;","children":[{"content":"&#x500b;&#x4eba;&#x60c5;&#x5831;&#x4fdd;&#x8b77;&#x6cd5;","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"&#x4e0d;&#x6b63;&#x30a2;&#x30af;&#x30bb;&#x30b9;&#x7981;&#x6b62;&#x6cd5;","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"&#x30b5;&#x30a4;&#x30d0;&#x30fc;&#x30bb;&#x30ad;&#x30e5;&#x30ea;&#x30c6;&#x30a3;&#x57fa;&#x672c;&#x6cd5;","children":[],"payload":{"tag":"li","lines":"30,31"}}],"payload":{"tag":"h2","lines":"27,28"}}],"payload":{"tag":"h1","lines":"0,1"}},null)</script>
+</body>
+</html>
